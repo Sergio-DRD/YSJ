@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo Soy Jackie</title>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.69/build/spline-viewer.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { overflow: hidden; font-family: Arial, sans-serif; position: relative; }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+        }
+        .social-buttons {
+            position: fixed;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            z-index: 1001;
+            padding: 10px;
+        }
+        .social-buttons a {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .social-buttons a img {
+            width: 50px;
+            height: 50px;
+        }
+        .social-buttons a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <spline-viewer url="https://prod.spline.design/pix9iXtuG0gC5hCF/scene.splinecode"></spline-viewer>
+    </div>
+    
+    <div class="social-buttons">
+        <a href="https://www.youtube.com/@YoSoyJackie" target="_blank" title="YouTube">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+        </a>
+        <a href="https://www.tiktok.com/@yosoy.jackie" target="_blank" title="TikTok">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046125.png" alt="TikTok">
+        </a>
+        <a href="https://www.instagram.com/yosoy.jackie" target="_blank" title="Instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/512px-Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/p/Yo-Soy-Jackie-100083564850617/" target="_blank" title="Facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Facebook_Logo.png/512px-Facebook_Logo.png" alt="Facebook">
+        </a>
+    </div>
+</body>
+</html>
